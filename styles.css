@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+.calendar-body {
+  width: 204px;
+  margin: 0 auto;
+  margin-top: 200px;
+}
+img {
+  width: 28px;
+  height: 28px;
+}
+
+button {
+  width: 32px;
+  height: 32px;
+  border: 2px solid black;
+  border-left: none;
+}
+
+input {
+  height: 32px;
+  border: 2px solid black;
+  padding-left: 10px;
+}
+
+.calendar-title {
+  display: flex;
+  margin-bottom: 5px;
+  justify-content: center;
+}
+
+.date {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+
+.row-1,
+.row-2,
+.row-3,
+.row-4,
+.row-5,
+.row-6 {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-items: center;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+.calendar {
+  border: 2px solid black;
+  padding: 10px 0;
+  padding-bottom: 0;
+  border-collapse: collapse;
+}
+
+.row-1 {
+  border-bottom: 2px solid black;
+  padding-bottom: 5px;
+}
+
+.row-2,
+.row-3,
+.row-4,
+.row-5 {
+  border-bottom: 1px solid black;
+}
+
+.row-2 div,
+.row-3 div,
+.row-4 div,
+.row-5 div,
+.row-6 div {
+  border-left: 1px solid black;
+  padding: 5px 5px;
+  width: 28px;
+  height: 28px;
+  text-align: center;
+}
+
+.row-2 div:nth-child(1),
+.row-3 div:nth-child(1),
+.row-4 div:nth-child(1),
+.row-5 div:nth-child(1),
+.row-6 div:nth-child(1) {
+  border-left: none;
+}
+
+.row-2 div:hover,
+.row-3 div:hover,
+.row-4 div:hover,
+.row-5 div:hover,
+.row-6 div:hover {
+  color: white;
+  background-color: black;
+  cursor: default;
+}
